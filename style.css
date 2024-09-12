@@ -7,7 +7,7 @@
 body {
     background: #E9F1FA; 
     font-family: Arial, sans-serif;
-    transition: background 0.3s, color 0.3s;
+    
 }
 
 .navbar {
@@ -105,7 +105,7 @@ body {
     border: 1px solid rgba(23,124,129, 0.9);
     margin: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    
 }
 
 .font-controls button:hover {
@@ -119,14 +119,26 @@ body {
 .theme-switch label {
     margin-right: 10px;
 }
-
 body.dark {
-    background: #333; 
+    background: #111; 
+    color: #ddd; 
+}
+
+body.dark .navbar {
+    background:black; 
     color: white;
 }
 
+
+
+body.dark .category-selector select {
+    background-color: #555; 
+    color: white; 
+}
 body.dark .app-container {
-    background: #444; 
+    background-color: #222; 
+    color: white;
+    border: 1px solid #444; 
 }
 
 body.dark .controls button,
